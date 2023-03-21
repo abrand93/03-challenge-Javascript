@@ -4,6 +4,7 @@ var upperCase = ['A','S','D','F','G','H','J','K','L','Q','W','E','R','T','Y','U'
 var specicalCharacters = [' ',',','!','"','#','$','%','&',"'",'(',')','*',',','-','.','/',':',';','<','=','>', '?','@','[',']','^','_','`','{','|','}','~']
 var numbers = ['0','1','2','3','4','5','6','7','8','9']
 var random = []
+var newarr = []
 // Function to prompt user for password options
 
 
@@ -19,11 +20,16 @@ function writePassword() {
   passwordText.value = password;
 
 }
-function generatePassword(){
+
+function randomOutPut(){
+
+  var randomOutPut = random[Math.floor (Math.random() * random.length)]
+
   
+}
 
 
-
+function generatePassword(){
  var firstPrompt = parseInt(
  prompt("How Many Characters Would you like your password to be? " , ))
 
@@ -73,8 +79,16 @@ function generatePassword(){
         alert("You must select one Character type!")
         return
       }
-     
+
+    
+      for (var i = 0; i < firstPrompt; i++) {
+        var newp = randomOutPut(random[i])
+        random[i] 
+        console.log(random[i]);}
+        alert(random.join(''))
     }
+    
+
    
 
   
