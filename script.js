@@ -3,7 +3,7 @@ var lowerCase =['a', 's', 'd', 'f','g','h','j','k','l','q','w','e','r','t','y','
 var upperCase = ['A','S','D','F','G','H','J','K','L','Q','W','E','R','T','Y','U','I','O','P','Z','X','C','V','B','N','M']
 var specicalCharacters = [' ',',','!','"','#','$','%','&',"'",'(',')','*',',','-','.','/',':',';','<','=','>', '?','@','[',']','^','_','`','{','|','}','~']
 var numbers = ['0','1','2','3','4','5','6','7','8','9']
-var random = []
+
 var newarr = []
 // Function to prompt user for password options
 
@@ -21,15 +21,22 @@ function writePassword() {
 
 }
 
-function randomOutPut(){
 
-  var randomOutPut = random[Math.floor (Math.random() * random.length)]
 
-  
-}
 
 
 function generatePassword(){
+  function randomOutPut(xyz){
+    var mixCharacters = Math.floor (Math.random() * xyz.length)
+   var ranlet = xyz[mixCharacters]
+  
+   return ranlet
+   
+  }
+ // console.log("test" + randomOutPut)
+   var random = []
+ var newpassword = []
+ //var randomCharacters = []
  var firstPrompt = parseInt(
  prompt("How Many Characters Would you like your password to be? " , ))
 
@@ -54,6 +61,7 @@ function generatePassword(){
     var selectLowerCase = confirm("Would You like to use Lower case?")
     if(selectLowerCase){
       random = random.concat(lowerCase)
+  
     }
     
       
@@ -61,15 +69,18 @@ function generatePassword(){
     if(selectUpperCase){
       random = random.concat(upperCase)
       
-     
+    
     }
     var selectSpecicalCharacters = confirm("Would you like to use specicalCharacters?")
     if(selectSpecicalCharacters){
       random = random.concat(specicalCharacters)
+      
     }
     var selectNumbers = confirm("Would you like to use a number")
     if(selectNumbers){
       random = random.concat(numbers)
+     
+
     }
     
     if(selectLowerCase === false &&
@@ -79,20 +90,26 @@ function generatePassword(){
         alert("You must select one Character type!")
         return
       }
-
-    
-      for (var i = 0; i < firstPrompt; i++) {
-        var newp = randomOutPut(random[i])
-        random[i] 
-        console.log(random[i]);}
-        alert(random.join(''))
+      
+     // testcode
+      for (var i = 0; i < firstPrompt; i++){
+      if(true){
+        var test = randomOutPut(lowerCase)
+        console.log("HERE "+ test)
+      }
     }
-    
 
-   
-
-  
-
+      console.log(random)
+       
+      for (var i = 0; i < firstPrompt; i++) {
+        var randomCharacters = randomOutPut(random)
+        newpassword.push(randomCharacters)
+       ;}
+       console.log(newpassword)
+        alert(newpassword.join(''))
+        newpassword.join('')
+        return newpassword.join('')
+      }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
