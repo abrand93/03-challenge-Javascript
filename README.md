@@ -1,7 +1,7 @@
 Java Script password genirator 
 
 ## Description
-For this project I wanted a password genrator that included upper and looser case lettser. Also, numbers and special characters
+For this project I wanted a password generator that included upper and lower case letters. Also, numbers and special characters
 
 
 ## Why
