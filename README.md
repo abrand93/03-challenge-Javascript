@@ -19,7 +19,7 @@ Here is the project in action
 
 ![alt css after](/Screenshot%202023-03-23%20161229.png)
 
-Here is a link to the updated page:  
+Here is a link to the updated page:  https://abrand93.github.io/Random-password-genrator-3.23/
 
 
 ## Installation
