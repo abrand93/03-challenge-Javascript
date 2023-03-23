@@ -1,4 +1,4 @@
-Java Script password genirator 
+Java Script password generator 
 
 ## Description
 For this project I wanted a password generator that included upper and lower case letters. Also, numbers and special characters
@@ -19,7 +19,7 @@ Here is the project in action
 
 ![alt css after](/Screenshot%202023-03-23%20161229.png)
 
-Here is a link to the updated page:  https://abrand93.github.io/Random-password-genrator-3.23/
+Here is a link to the updated page:  https://abrand93.github.io/Random-password-generator-3.23/
 
 
 ## Installation
